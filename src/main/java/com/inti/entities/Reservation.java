@@ -1,5 +1,6 @@
 package com.inti.entities;
 
+
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -55,6 +56,5 @@ public void setNbJours(int nbJours) {
 public String toString() {
 	return "Reservation [idVoyageur=" + idVoyageur + ", nbJours=" + nbJours + "]";
 }
-
 
 }
