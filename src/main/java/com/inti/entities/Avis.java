@@ -14,7 +14,9 @@ public class Avis {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idAvis;
+	
 	private String commentaire;
+	
 	@ManyToOne
 	private Hotel hotel;
 

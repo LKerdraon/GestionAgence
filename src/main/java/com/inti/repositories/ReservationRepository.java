@@ -13,15 +13,5 @@ import com.inti.entities.Reservation;
 	public interface ReservationRepository extends JpaRepository<Reservation, Long> {
 		// JpaRepsitory : CRUD : findAll, findById, create, update ...
 		
-		Reservation findByDateReservation(Date dateReservation);
 
-		@Query(value = "select * from reservation r where r.nbJours = ?1 ")
-		List<Reservation> findReservationByNbJours(int nbJours);
-
-		@Query(value = "select * from reservation r where r.dateReservation = ?1 and u.nbJours = ?2")
-		List<Reservation> findReservatioonByNbJoursAndDateReservation(int nbJours, Date dateReservation);
-		
-	
-		@Query("select r from reservation r where r.dateReservation = ?1")
-		List<Reservation> findReservationByDateReservation(String dateReservation);
 }
