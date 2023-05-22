@@ -1,4 +1,4 @@
-package services.impl;
+package com.inti.services.impl;
 
 import java.util.List;
 
@@ -6,8 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.inti.entities.Voyageur;
 import com.inti.repositories.VoyageurRepository;
-
-import services.interfaces.IVoyageurService;
+import com.inti.services.interfaces.IVoyageurService;
 
 public class VoyageurService implements IVoyageurService{
 
