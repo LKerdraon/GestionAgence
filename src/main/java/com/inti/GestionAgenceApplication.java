@@ -1,7 +1,13 @@
 package com.inti;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.inti.entities.Voyageur;
+
+import services.impl.VoyageurService;
+import services.interfaces.IVoyageurService;
 
 @SpringBootApplication
 public class GestionAgenceApplication {
@@ -10,4 +16,5 @@ public class GestionAgenceApplication {
 		SpringApplication.run(GestionAgenceApplication.class, args);
 	}
 
+	
 }
