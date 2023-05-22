@@ -25,8 +25,11 @@ public class Hotel {
 	@ManyToOne
 	@JoinColumn(name = "id_destination")
 	private Destination destination;
+	
 	@OneToMany(mappedBy = "hotel")
 	private List<Avis> avis = new ArrayList<>();
+	
+	
 	@OneToMany(mappedBy = "hotel")
 	private List<Reservation> reservations = new ArrayList<>();
 

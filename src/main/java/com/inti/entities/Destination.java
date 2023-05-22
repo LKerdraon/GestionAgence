@@ -21,12 +21,10 @@ public class Destination implements Serializable {
 	private Long longitude;
 	private Long latitude;
 	
-	@OneToMany(mappedBy = "Hotel")
+	@OneToMany(mappedBy = "destination")
 	private List<Hotel> hotels = new ArrayList<>();
 
 	public Destination() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Destination(Long idDestination, Long longitude, Long latitude) {
